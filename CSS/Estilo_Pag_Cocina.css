@@ -82,11 +82,12 @@ header {
   border-width: 5px;
   border-style:outset;
   border-radius: 20px;
-  width: 200px;
+  width: 15%;
+  height: 7%;
   background-color: #fa8900;
   position: absolute;
   top: 90%;
-  justify-items: center;
+  left: 40%;
 }
 
 .dropdown {
