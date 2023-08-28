@@ -79,10 +79,10 @@ header {
     border-style:outset;
     border-radius: 20px;
     width: 200px;
-    margin-left: 362px ;
     background-color: #fa8900;
     position: absolute;
     top: 88%;
+    right: 40%;
 }
 
 .dropdown {
