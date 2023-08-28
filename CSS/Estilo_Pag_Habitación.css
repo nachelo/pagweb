@@ -72,13 +72,21 @@ header {
 }
 
 .precio{
-    border: #000000;
-    border-width: 5px;
-    border-style:outset;
-    border-radius: 20px;
-    width: 200px;
-    margin-left: 362px ;
-    background-color: #fa8900;
+  border: #000000;
+  border-width: 5px;
+  border-style:outset;
+  border-radius: 20px;
+  width: 15%;
+  height: 7%;
+  background-color: #fa8900;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  right: 40%;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 57px;
+  min-height: 57px;
 }
 
 .dropdown {

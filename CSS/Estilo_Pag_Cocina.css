@@ -89,6 +89,10 @@ header {
   top: 90%;
   left: 40%;
   right: 40%;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 57px;
+  min-height: 57px;
 }
 
 .dropdown {
