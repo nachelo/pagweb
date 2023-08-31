@@ -88,11 +88,10 @@ body {
 
   .nuevo {
     border: 2px solid #ffffff;
-    padding-left: 5%;
+    padding: 0px;
     width: 80%;
     background-color: #232f3e;
     color: #fff;
-    
   }
 
   div ul{
