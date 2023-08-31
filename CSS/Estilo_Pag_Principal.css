@@ -13,31 +13,13 @@ body {
   }
 
   @media (max-width: 767px) {
-    .ordenador{
-      display: none;
-    }
-    .tablet{
-      display: none;
-    }
   }
 
   /**tablet**/
   @media (min-width: 768px) and (max-width:990){
-    .ordenador{
-      display: none;
-    }
-    .movil{
-      display: none;
-    }
   }
 
   @media (min-width: 991px){
-    .tablet{
-      display: none;
-    }
-    .movil{
-      display: none;
-    }
   }
   
   .titulo{
