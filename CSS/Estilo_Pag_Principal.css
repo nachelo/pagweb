@@ -53,6 +53,8 @@ body {
     margin-top:10%;
     margin-left: 3%;
     position: relative;
+    height: 80%;
+    width: 80%;
   }
   
   .inicio h1 {
