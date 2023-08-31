@@ -6,6 +6,39 @@ body {
     background-color: #131921;
     color: #fff;
   }
+
+  .resolución{
+    width: 99%;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    .ordenador{
+      display: none;
+    }
+    .tablet{
+      display: none;
+    }
+  }
+
+  /**tablet**/
+  @media (min-width: 768px) and (max-width:990){
+    .ordenador{
+      display: none;
+    }
+    .movil{
+      display: none;
+    }
+  }
+
+  @media (min-width: 991px){
+    .tablet{
+      display: none;
+    }
+    .movil{
+      display: none;
+    }
+  }
   
   .titulo{
     text-align: center;
@@ -62,7 +95,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     display: flex;
