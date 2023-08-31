@@ -9,17 +9,6 @@ body {
 
   .resolución{
     width: 99%;
-    text-align: center;
-  }
-
-  @media (max-width: 767px) {
-  }
-
-  /**tablet**/
-  @media (min-width: 768px) and (max-width:990){
-  }
-
-  @media (min-width: 991px){
   }
   
   .titulo{
@@ -60,9 +49,8 @@ body {
   .inicio {
     color: #fff;
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
+    margin-top:10%;
+    margin-left: 3%;
     position: relative;
   }
   
@@ -77,7 +65,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -86,18 +74,20 @@ body {
   .novedades {
     border: 2px solid #ffffff;
     padding: 20px;
-    width: 800px;
+    width: 70%;
     background-color:#232f3e;
     text-align:center;
     color: #fff;
-    margin-top: 100px;
-    margin-right: 50px;
+    margin-top: 7%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 16.2%;
   }
 
   .nuevo {
     border: 2px solid #ffffff;
     padding: 0px;
-    width: 400px;
+    width: 100%;
     background-color: #232f3e;
     color: #fff;
   }
@@ -121,13 +111,12 @@ body {
   }
 
   .dedicatoria{
-    margin-right: 50px;
-    margin-left: 500px;
+    margin-right: 5%;
+    margin-left: 20%;
   }
 
   .derechos{
-    margin-right: 500px;
-    margin-left: 50px;
+    margin-left: 5%;
   }
 
   .dropdown {
