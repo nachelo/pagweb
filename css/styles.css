@@ -1,0 +1,388 @@
+:root{
+    --fuenteHeading:'PT Sans', sans-serif;
+    --fuenteParrafos:'Open Sans', sans-serif;
+
+    --primario: #114B81;
+    --secundario: #337B32;
+    --terciario: #F1F1F1;
+    --cuaternario: #EBEBEB;
+    --quinario: #E5E5E5;
+    --blanco:#ffffff;
+    --negro:#000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+p{
+    margin: 2rem;
+    font-size:large;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+    padding-bottom: 3rem;
+    background-color: var(--terciario);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+.title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:var(--primario) ;
+}
+.title a{
+    color: var(--primario);
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:var(--terciario);
+    box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    width: 15rem;
+}
+nav ul li ul li a {
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.titulo__principal{
+    color: var(--primario);
+    font-weight: 600;
+}
+
+.titulo__principal:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--primario);
+    text-decoration-thickness: 0.2rem;
+}
+
+.titulo__secundario{
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.titulo__secundario:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--secundario);
+    text-decoration-thickness: 0.2rem;
+}
+
+.construccion{
+    background-color: #ffc000;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.construccion img{
+    width: 20rem;
+}
+.container{
+    /* margin-top: 10rem; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main__content{
+    background-color: var(--quinario) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20rem;
+}
+
+.sidebar{
+    background-color: var(--cuaternario);
+    display: flex;
+    justify-content: center;
+}
+
+.collage{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+}
+
+.img__collage{
+    width: 35.9rem;
+    height: 26.9rem;
+}
+
+.main__content--texto{
+    margin-top: -3rem;
+}
+
+.seleccion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.salon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.salon:hover{
+    cursor: pointer;
+    background-image: url(/img/Salon.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.salon:hover p{
+    visibility: hidden;
+}
+
+.cocina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.cocina:hover{
+    cursor: pointer;
+    background-image: url(/img/cocina.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.cocina:hover p{
+    background-color: rgba(185, 185, 185, 0.7);
+    color: var(--negro);
+    visibility: hidden;
+}
+
+.dormitorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.dormitorio:hover{
+    cursor: pointer;
+    background-image: url(/img/dormitorio.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.dormitorio:hover p{
+    background-color: rgba(185, 185, 185, 0.7);
+    color: var(--negro);
+    visibility: hidden;
+}
+
+.jardin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.jardin:hover{
+    cursor: pointer;
+    background-image: url(/img/Jardin.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.jardin:hover p{
+    background-color: rgba(185, 185, 185, 0.7);
+    color: var(--negro);
+    visibility: hidden;
+}
+
+.baño{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.baño:hover{
+    cursor: pointer;
+    background-image: url(/img/baño.jpg);
+    background-size: cover;
+    background-position: center;
+    transition:all 0.3s ease;
+}
+
+.baño:hover p{
+    background-color: rgba(185, 185, 185, 0.7);
+    color: var(--negro);
+    visibility: hidden;
+}
+
+.buhardilla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--terciario);
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 2rem 8rem;
+
+}
+
+.buhardilla:hover{
+    cursor: pointer;
+    background-image: url(/img/buhardilla.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.buhardilla:hover p{
+    background-color: rgba(185, 185, 185, 0.7);
+    color: var(--negro);
+    visibility: hidden;
+}
+
+.footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+}
